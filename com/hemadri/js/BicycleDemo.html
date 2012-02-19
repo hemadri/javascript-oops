@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bicycle Demo</title>
+		<script type="text/javascript" src="Bicycle.js"></script>
+		<script type="text/javascript" >
+			function init()
+			{
+		        // Create two different Bicycle objects
+				var bike1 = new Bicycle(5,1,2);
+				var bike2 = new Bicycle(10,10,5);
+		 
+				 // Invoke methods on those objects
+		        bike1.setCadence(50);
+		        bike1.speedUp(10);
+		        bike1.setGear(2);
+		        bike1.printStates();
+		 
+		        bike2.setCadence(50);
+		        bike2.speedUp(10);
+		        bike2.setGear(2);
+		        bike2.applyBrake(10);
+		        bike2.setCadence(40);
+		        bike2.speedUp(10);
+		        bike2.setGear(3);
+		        bike2.printStates();
+			}
+		</script>
+	</head>
+	<body onload="init()">
+	</body>
+</html>
